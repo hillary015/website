@@ -1,0 +1,200 @@
+baseURL: 'http://hillary015.github.io/'
+languageCode: 'en-us'
+title: 'Hillary Layden'
+theme: 'hugo-profile'
+
+Paginate: 3
+disqusShortname:
+googleAnalytics:
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+
+params:
+  title: "Hillary Layden"
+  description:
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor: 
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Hillary."
+    subtitle: "I move very small amounts of liquid from one tube to another"
+    content: "Biochemistry Ph.D. candidate in the Hiebert Lab at Vanderbilt University. Using chemical genetics, genomics, and proteomics to understand how the dysregulation of transcription and epigenetics contributes to cancer."
+    image: /images/hero.svg
+    button:
+      enable: true
+      name: "CV"
+      url: "https://www.dropbox.com/s/11cxc665leqv9ne/hillarylayden.github.docx?dl=0"
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/hillary015
+        - icon: fab fa-linkedin-in
+          url: https://linkedin.com/in/hillarylayden
+      customIcons:
+        - icon: /fav.png
+          url: "https://lab.vanderbilt.edu/hiebert-lab/"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I am a biochemist interested in how transcriptional dysregulation contributes to cancer and other diseases. I use a wide array of molecular biology, genomic, and proteomic techniques to interrogate how particular proteins regulate transcription and contribute to disease pathogenesis. I am currently a Ph.D. candidate in the Hiebert Lab at Vanderbilt University in Nashville, TN.
+
+      My thesis research is focused on transcriptional dysregulation in Diffuse Large B-Cell Lymphoma.
+    skills:
+      enable: true
+      title: "Highlighted Skills:"
+      items:
+        - "CRISPR/Cas9"
+        - "PRO-seq"
+        - "Flow cytometry"
+        - "Genomic Data Analysis"
+        - "R"
+        - "Data integration"
+
+  # Research Experience
+  experience:
+    enable: true
+    items:
+      - job: "Ph.D. Candidate"
+        company: "Vanderbilt University"
+        companyUrl: ""
+        date: "Aug 2017 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: "Ph.D. Candidate in the Scott Hiebert Lab. Using cutting edge technologies to study transcriptional dysregulation in Diffuse Large B-Cell Lymphoma, Acute Myeloid Leukemia, and Rhabdomyosarcoma."
+
+      - job: "Senior Aquaculture Specialist"
+        company: "Dana Farber Cancer Institute"
+        companyUrl: ""
+        date: "Jul 2013 - Aug 2017"
+        featuredLink:
+          enable: false
+          url: ""
+        content:
+          "Senior aquaculture specialist in the A. Thomas Look lab. Managed a multi-user zebrafish facility and an animal care staff of 3-5 employees. Increased survivorship of genetically modified zebrafish by 80% which also increased experimental reproducibility. Contributed to the identification and investigation of active compounds in melanoma, neuroblastoma, and T-cell acute lymphoblastic leukemia."
+
+  # Education
+  education:
+    enable: true
+    # index: true
+    items:
+      - title: "Doctor of Philosophy in Biochemistry"
+        school:
+          name: "Vanderbilt University, Nashville, TN"
+          url: ""
+        date: "2017 - present"
+        content: |-
+          Hiebert Lab, Department of Biochemistry
+            Dysregulation of transcription in DLBCL.
+      - title: "Bachelor of Science in Biology, Marine Sciences"
+        school:
+          name: "Suffolk Univeristy, Boston, MA"
+          url: ""
+        date: "2010 - 2014"
+        content: |-
+
+
+  # Achievements
+  achievements:
+    enable: true
+    items:
+      - title: VICC Retreat First Place Poster Prize
+      - title: NRSA F31 (NHLBI)
+
+  # projects
+  projects:
+    enable: true
+    items:
+      - title: Hiebert Lab Publications
+        content: A protocol for rapid degradation of endogenous transcription factors in mammalian cells and identification of direct regulatory targets
+        image:
+        featured:
+          name: Protocol
+          link: https://www.sciencedirect.com/science/article/pii/S2666166721002379
+
+      - title: Look Lab Publications
+        content: Synergistic melanoma cell death mediated by inhibition of both MCL1 and BCL2 in high-risk tumors driven by NF1/PTEN loss.
+
+        image:
+        featured:
+          name: Melanoma
+          link: https://www.nature.com/articles/s41388-021-01926-y
+        
+      - title: Rotation Lab Publications
+        content: HMCES Maintains Genome Integrity by Shielding Abasic Sites in Single-Strand DNA
+        featured:
+          name: HMCES
+          link: https://www.sciencedirect.com/science/article/pii/S0092867418314545
+
+  #Contact
+  contact:
+    enable: true
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: hillary.layden@vanderbilt.edu
+    btnName: Mail me
+
+  footer:
+    # recentPosts: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
